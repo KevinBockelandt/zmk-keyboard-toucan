@@ -57,10 +57,10 @@
         clip {
             display-name = "CLIP";
             bindings = <
-                &kp TAB     &kp L       &none  &kp Q         &none      &kp E       &none  &none  &none  &none  &none    &kp ESC
-                &kp LALT    &kp C       &kp X  &kp Y         &kp B      &kp P       &none  &none  &none  &none  &none    &none
-                &kp LSHIFT  &kp LC(N0)  &kp U  &kp LC(LALT)  &kp LC(A)  &kp L       &none  &none  &none  &none  &kp DEL  &to 0
-                                               &kp R         &kp Z      &kp SPACE   &none  &none  &none
+                &kp TAB     &kp L       &none  &kp Q  &kp E      &kp LC(LALT)  &none  &none  &none  &none  &none    &kp ESC
+                &kp LALT    &kp C       &kp X  &kp Y  &kp B      &kp P         &none  &none  &none  &none  &none    &none
+                &kp LSHIFT  &kp LC(N0)  &kp U  &none  &kp LC(A)  &kp L         &none  &none  &none  &none  &kp DEL  &to 0
+                                               &kp R  &kp Z      &kp SPACE     &kp RET  &none  &none
             >;
         };
 
