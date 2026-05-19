@@ -7,7 +7,7 @@
 #define BASE 0
 #define UPER  1
 #define SYM  2
-#define NUM  3
+#define FUN  3
 #define CLIP  4
 
 / {
@@ -37,20 +37,20 @@
         sym {
             display-name = "SYM";
             bindings = <
-                &kp LPAR  &kp EXCL        &kp AT        &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp PSCRN   &none      &kp INS   &kp RPAR
-                &kp LBRC  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp CAPS     &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT  &kp PLUS  &kp RBRC
-                &kp LBKT  &studio_unlock  &none         &none         &none         &kp LGUI     &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp STAR  &kp RBKT
-                                                        &mo 3         &mo 1         &kp SPACE    &kp RET    &mo 2      &kp LCTRL
+                &kp LPAR  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5       &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp RPAR
+                &kp LBRC  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp PLUS  &kp RBRC
+                &kp LBKT  &CARET    &kp AMPS  &kp LT    &kp GT    &kp EQUAL    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp STAR  &kp RBKT
+                                                        &mo 3     &mo 1        &kp SPACE  &kp RET    &mo 2      &kp LCTRL
             >;
         };
 
-        num {
-            display-name = "NUM";
+        fun {
+            display-name = "FUN";
             bindings = <
-                &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6       &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
-                &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &to 4
-                &kp LT     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5    &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0  &kp GT
-                                                 &mo 3      &mo 1      &kp SPACE    &mkp LCLK  &mkp MCLK  &mkp RCLK
+                &kp F1    &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
+                &kp CAPS  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp PSCRN    &none      &none      &none      &none      &none      &to 4
+                &kp INS   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_N4     &kp KP_N5    &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0  &kp LGUI
+                                                      &mo 3         &mo 1         &kp SPACE    &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
         };
 
